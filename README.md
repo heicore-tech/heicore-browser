@@ -1,4 +1,4 @@
-# 黑曜石浏览器（https://heicore.tql.moe/）
+# 黑曜石浏览器社区浏览版（https://heicore.tql.moe/）
 ## How to build
 ```rust
 cargo build
