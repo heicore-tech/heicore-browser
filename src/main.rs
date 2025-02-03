@@ -1,3 +1,5 @@
+#![windows_subsystem = "windows"]
+
 use winit::event_loop::EventLoop;
 use winit::window::Window;
 use winit::application::ApplicationHandler;
@@ -17,7 +19,7 @@ impl ApplicationHandler for App {
   fn resumed(&mut self, event_loop: &ActiveEventLoop) {
     let icon = load_icon(include_bytes!("../resources/icon.png"));
     let window = event_loop.create_window(Window::default_attributes()
-    .with_title("Winit window")
+    .with_title("黑曜石浏览器")
     .with_transparent(true)
     .with_window_icon(Some(icon.clone()))).unwrap();
     let webview = WebViewBuilder::new()
